@@ -1,4 +1,5 @@
 const { withContentlayer } = require('next-contentlayer')
+const nextTranslate = require('next-translate')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -92,3 +93,5 @@ module.exports = withContentlayer(
     },
   })
 )
+
+module.exports = nextTranslate()
