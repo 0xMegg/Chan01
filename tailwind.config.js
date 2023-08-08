@@ -167,7 +167,33 @@ module.exports = {
           },
         },
       }),
+      keyframes: {
+        fadeInOut: {
+          '0%': { opacity: 1 },
+          '33%': { opacity: 0 },
+          '66%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        fadeInOutDelayOne: {
+          '0%': { opacity: 0 },
+          '33%': { opacity: 1 },
+          '66%': { opacity: 0 },
+          '100%': { opacity: 0 },
+        },
+        fadeInOutDelayTwo: {
+          '0%': { opacity: 0 },
+          '33%': { opacity: 0 },
+          '66%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+      },
+      animation: {
+        fadeInOut: 'fadeInOut 9s infinite',
+        fadeInOutDelayOne: 'fadeInOutDelayOne 9s infinite',
+        fadeInOutDelayTwo: 'fadeInOutDelayTwo 9s infinite',
+      },
     },
   },
+  variants: {},
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }

@@ -46,6 +46,7 @@ const Pre = ({ children }: Props) => {
           >
             {copied ? (
               <>
+                {/* 노트 */}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -55,6 +56,7 @@ const Pre = ({ children }: Props) => {
               </>
             ) : (
               <>
+                {/* 노트 */}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"

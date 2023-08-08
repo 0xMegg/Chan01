@@ -46,6 +46,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
+              {/* magnifier */}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
